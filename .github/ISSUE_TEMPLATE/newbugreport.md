@@ -1,6 +1,6 @@
 ---
+
 name: Bug Report
-about: bug report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
@@ -60,10 +60,11 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct] (https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
+    
 ---
 
 
