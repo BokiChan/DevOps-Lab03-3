@@ -1,4 +1,3 @@
----
 
 name: Bug Report
 description: File a bug report
@@ -12,6 +11,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+        
   - type: input
     id: contact
     attributes:
@@ -20,6 +20,7 @@ body:
       placeholder: ex. email@example.com
     validation:
       required: false
+      
   - type: textarea
     id: what-happened
     attributes:
@@ -29,6 +30,7 @@ body:
       value: "A bug happened!"
     validation:
       required: true
+      
   - type: dropdown
     id: version
     attributes:
@@ -40,6 +42,7 @@ body:
       default: 0
     validation:
       required: true
+      
   - type: dropdown
     id: browsers
     attributes:
@@ -50,12 +53,14 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+        
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+      
   - type: checkboxes
     id: terms
     attributes:
@@ -64,5 +69,3 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
-    
----
