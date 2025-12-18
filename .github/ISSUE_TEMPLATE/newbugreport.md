@@ -1,7 +1,6 @@
 ---
 name: Bug Report
 description: File a bug report
-about: Bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
@@ -16,7 +15,7 @@ body:
     id: contact
     attributes:
       label: Contact Details
-      decription: How can we get in touch with you if we need more info?
+      description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validation:
       required: false
@@ -24,7 +23,7 @@ body:
     id: textarea
     attributes:
       label: What happened?
-      description: Also tell us, What did you expact to happen?
+      description: Also tell us, What did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validation:
@@ -38,14 +37,14 @@ body:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
       default: 0
-    validations:
+    validation:
       required: true
   - type: dropdown
     id: browsers
     attributes:
       label: What browsers are you seeing the problem on?
       multiple: true
-      option:
+      options:
         - Firefox
         - Chrome
         - Safari
@@ -64,6 +63,5 @@ body:
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
----
 
 
