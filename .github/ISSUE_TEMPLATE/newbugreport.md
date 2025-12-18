@@ -1,6 +1,7 @@
 ---
 name: Bug Report
 description: File a bug report
+about: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
@@ -13,6 +14,14 @@ body:
         Thanks for taking the time to fill out this bug report!
   - type: input
     id: contact
+    attributes:
+      label: Contact Details
+      decription: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validation:
+      required: false
+  - type: textarea
+    id: textarea
     attributes:
       label: What happened?
       description: Also tell us, What did you expact to happen?
