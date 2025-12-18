@@ -1,52 +1,46 @@
-name: Feature Request
-description: Suggest a new idea for this project
-title: "Feature: "
+name: Feature bug
+description: Feature bug report
+title: "[Feature]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
-  - type: markdown
-    attributes:
-      value: "### Contact Details"
-
   - type: input
-    id: name
+    id: contact
     attributes:
-      label: "What is your name?"
-      placeholder: "ex. Sertha Taweewattana"
+      label: Contact Details
+      description: What is your name
+      placeholder: ex. Apitawan Chirakunasin
     validations:
-      required: true
-
+      required: false
   - type: markdown
     attributes:
-      value: "Thanks for taking the time to fill out this bug report!"
-
+      value: Thank you for taking your time fill this report!
+      
   - type: dropdown
-    id: type
+    id: feature
     attributes:
-      label: "Type of request?"
-      description: "Select the type of your request"
+      label: Type of request?
+      description: select the type of your request
       options:
         - New Feature
-        - Enhancement
-        - Bug Fix
+      default: 0
     validations:
       required: true
-
   - type: dropdown
-    id: os
+    id: OS
     attributes:
-      label: "What is the OS which you want to suggest?"
+      label: What is the OS Which you want to suggest?
       multiple: true
       options:
-        - Windows
-        - MacOS
-        - Linux
-        - iOS
-        - Android
-
+        - Window
+        - Max Os
+        - linux
   - type: textarea
-    id: description
+    id: suggest
     attributes:
-      label: "What are the details of your suggestion?"
-      description: "Explain what do you want"
-      placeholder: "Feature details!"
-    validations:
-      required: true
+      label: What are the details of your suggest?
+      description: Explain what do you want
+      placeholder: Feature detail!
+      render: bash
